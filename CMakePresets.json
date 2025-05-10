@@ -1,0 +1,15 @@
+{
+    "version": 9,
+    "configurePresets": [
+        {
+            "name": "LibTorch",
+            "displayName": "LibTorch",
+            "generator": "Ninja",
+            "binaryDir": "build",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_PREFIX_PATH": "$env{LIBTORCH_DIR}"
+            }
+        }
+    ]
+}
